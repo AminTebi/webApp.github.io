@@ -41,29 +41,29 @@
 
 
   <script>
-    Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyDDKSpT_g_mS5_CT1epcHq_URXy3U9CVlw",
-        authDomain: "ziluck.firebaseapp.com",
-        projectId: "ziluck",
-        storageBucket: "ziluck.appspot.com",
-        messagingSenderId: "755537997341",
-        appId: "1:755537997341:web:e739780fc9fb3bff6360f4",
-        measurementId: "G-R1VZ8T9HKF"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    // Your web app's Firebase configuration
+    // var firebaseConfig = {
+    //     apiKey: "AIzaSyDDKSpT_g_mS5_CT1epcHq_URXy3U9CVlw",
+    //     authDomain: "ziluck.firebaseapp.com",
+    //     projectId: "ziluck",
+    //     storageBucket: "ziluck.appspot.com",
+    //     messagingSenderId: "755537997341",
+    //     appId: "1:755537997341:web:e739780fc9fb3bff6360f4",
+    //     measurementId: "G-R1VZ8T9HKF"
+    // };
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
 
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./firebase-messaging-sw.js')
-      .then((registration) => {
-        console.log('Service Worker registration successful with scope: ', registration.scope);
-      }).catch((err) => {
-        console.log('Service Worker registration failed: ', err);
-      });
-    }
+    // if ('serviceWorker' in navigator) {
+    //   navigator.serviceWorker.register('./firebase-messaging-sw.js')
+    //   .then((registration) => {
+    //     console.log('Service Worker registration successful with scope: ', registration.scope);
+    //   }).catch((err) => {
+    //     console.log('Service Worker registration failed: ', err);
+    //   });
+    // }
   </script>
 
   <script>
@@ -76,13 +76,15 @@
 </head>
 <body>
 
+  <h1>Hello</h1>
+
   
   <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('./firebase-messaging-sw.js');
-            });
-        }
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', function () {
+        //         navigator.serviceWorker.register('./firebase-messaging-sw.js');
+        //     });
+        // }
   </script>
   
   <script src="main.dart.js" type="application/javascript"></script>
