@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="theme-color" content="#4E4FEB">
+  <meta name="description" content="ZiLuck">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4E4FEB">
+  <meta name="theme-color" content="#4E4FEB0">
+  <meta name="apple-mobile-web-app-title" content="ziluck">
+  <link rel="apple-touch-icon" href="icons/favicon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ZiLuck</title>
+  <link rel="manifest" href="./manifest.json">
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js"></script>
+
+
+  <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/firebase-messaging-sw.js');
+            });
+        }
+  </script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDDKSpT_g_mS5_CT1epcHq_URXy3U9CVlw",
+        authDomain: "ziluck.firebaseapp.com",
+        projectId: "ziluck",
+        storageBucket: "ziluck.appspot.com",
+        messagingSenderId: "755537997341",
+        appId: "1:755537997341:web:e739780fc9fb3bff6360f4",
+        measurementId: "G-R1VZ8T9HKF"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./firebase-messaging-sw.js')
+      .then((registration) => {
+        console.log('Service Worker registration successful with scope: ', registration.scope);
+      }).catch((err) => {
+        console.log('Service Worker registration failed: ', err);
+      });
+    }
+  </script>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "3878488083";
+  </script>
+  <!-- This script adds the flutter initialization JS code  -->
+  <script src="./flutter.js" defer></script>
+  <script src="./flutter.js?version=1" defer></script>
+</head>
+<body>
+
+    <script src="main.dart.js" type="application/javascript"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./firebase-messaging-sw.js')
+        .then((registration) => {
+          console.log('Service Worker registration successful with scope: ', registration.scope);
+        }).catch((err) => {
+          console.log('Service Worker registration failed: ', err);
+        });
+      }
+    </script>
+
+
+
+
+  <script src="./flutter.js" defer></script>
+
+</body>
+</html>
