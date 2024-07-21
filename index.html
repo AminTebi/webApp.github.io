@@ -25,10 +25,10 @@
   <script src="flutter.js" defer></script>
   <script>
 
-    console.log("LOG 12:49");
+    console.log("LOG 12:53");
     
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./firebase-messaging-sw.js').catch(function(error) {
+      navigator.serviceWorker.register('/firebase-messaging-sw.js').catch(function(error) {
         console.error('Service worker registration failed:', error);
       });
     }
