@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Ziluck Project">
+  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,18 +14,21 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-<!--   <link rel="icon" type="image/png" href="favicon.png"/> -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>ZiLuck</title>
-  <link rel="manifest" href="./manifest.json">
+  <link rel="manifest" href="manifest.json">
 
   <script>
     const serviceWorkerVersion = null;
   </script>
   <script src="flutter.js" defer></script>
   <script>
+
+    console.log("LOG 12:45");
+    
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./firebase-messaging-sw.js').catch(function(error) {
+      navigator.serviceWorker.register('/firebase-messaging-sw.js').catch(function(error) {
         console.error('Service worker registration failed:', error);
       });
     }
@@ -33,9 +36,9 @@
 </head>
 <body>
   <script>
-    console.log("Log 12:43");
+    
     window.addEventListener('load', function(ev) {
-      if (window._flutter) {
+      if (typeof _flutter !== 'undefined') {
         _flutter.loader.loadEntrypoint({
           serviceWorker: {
             serviceWorkerVersion: serviceWorkerVersion,
