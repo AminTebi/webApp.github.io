@@ -1,11 +1,11 @@
 {
-    "name": "ZiLuck",
-    "short_name": "ZiLuck",
+    "name": "diabetter_new_design",
+    "short_name": "diabetter_new_design",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Unlock your gut health with ziluck",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
